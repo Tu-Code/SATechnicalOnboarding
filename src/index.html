@@ -1,99 +1,263 @@
 <!DOCTYPE html>
+<!-- committtt -->
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-
+    <title>Sarah Solarin - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- for contact -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
 </head>
-<body>
-    <main>
-        <article class="box">
-            <h1>Sarah Solarin</h1>
-            <div><a href="mailto:your.email@example.com">your-email@example.com</a></div>
+
+  <body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class='menu-btn'>Home</a></li>
+                <li><a href="#about" class='menu-btn'>About</a></li>
+                <li><a href="#projects" class='menu-btn'>My Projects</a></li>
+                <li><a href="#skills" class='menu-btn'>Skills</a></li>
+                <li><a href="#contact" class='menu-btn'>Contact Me</a></li>
+            </ul>
             
-            <section class="box">
-                <h2>
-                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                    Social media
-                </h2>
-                <ul>
-                    <li><a href="https://github.com/<handle>">@github_handle</a></li>
-                    <li><a href="https://linkedin.com/in/<handle>">@linkedin_handle</a></li>
-                    <li><a href="https://twitter.com/<handle>">@twitter_handle</a></li>
-                </ul>    
-            </section>
-            
-            <section class="box">
-                <div class="education">
-                    <h2>
-                        <i class="fa fa-certificate" aria-hidden="true"></i>
-                        School name
-                    </h2>
-                    <h3>Major</h3>
-                    <ul>
-                        <li>GPA: 4.0</li>
-                        <li>Years</li>
-                    </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Sarah Solarin</div>
+                <div class="text-3">And I'm a <span class='typing'></span></div>
+            </div>
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/seun-solarin-667532209/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/sarah_tuer" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://github.com/Tu-Code/Tu-Code" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about  -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+
+                <div class="column left">
+                    <img src='images/me.jpg' alt='Profile'>
                 </div>
-            </section>
-
-            <section class="box">
-                <h2>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    Skills
-                </h2>
-                <ul>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
-                    <li>Visual Studio Code</li>
-                </ul>
-            </section>
-        </article>
-        <article class="box">
-            <section class="box">
-                <h2>
-                    <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    Experience
-                </h2>
-                <h3>Microsoft Learn Student Ambassador</h3>
-                <ul>
-                    <li>Some skill</li>
-                    <li>Another skill</li>
-                </ul>
-            </section>
-            <section class="box">
-                <h2>
-                    <i class="fa fa-building" aria-hidden="true"></i>
-                    Internships
-                </h2>
-
-                <h3>Company name</h3>
-                <ul>
-                    <li>Accomplishment</li>
-                    <li>Another accomplishment</li>
-                </ul>
-            </section>
-            <section class="box">
-                <h2>
-                    <i class="fa fa-cubes" aria-hidden="true"></i>
-                    Projects
-                </h2>
+                <div class="column right">
+                    <div class="text">I'm Sarah and I'm a <span class='typing-2'></span></div>
+                    <p>17 year-old second-year Computer Science major and Machine Learning enthusiast with a gift for writing and debugging code.
+                        STEM, nature and animal lover. Relishes the challenge of
+                        working within demanding time constraints as a team player. Prepared to apply software coding expertise in the
+                        development of solutions to complex problems.</p>
+                    <a href='https://docs.google.com/document/d/1Q-MVIiLlbYD-e-KJuhA2btumlyfVpR4p/edit?usp=sharing&ouid=101192745430870611517&rtpof=true&sd=true'>Download CV</a>
+                </div>
                 
-                <h3>Great hackathon</h3>
-                <div>This was a great hack!</div>
-                <ul>
-                    <li>Cool technology used</li>
-                    <li>Prize won</li>
-                </ul>
-            </section>
-        </article>
-    
-    </main>
-</body>
+            </div>
+        </div>
+    </section>
+    <!-- projects -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="pro-content">
+
+                <div class="card" onclick="location.href='https://github.com/Tu-Code/Hokimi-2.0/blob/main/README.md'">
+                    <div class="box">
+                        <img class='img' src='images/ar_image_furniture_one.jpg' alt=''>
+                        <div class="text">Hokimi AR</div>
+                        <p>Hokimi provides seamless AR integration for businesses and a composite 
+                            API for developers. An easy to use and easy to scale platform for
+                            fusing Augmented and Virtual Reality into real life situations.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='https://the-bored-app.herokuapp.com/'">
+                    <div class="box">
+                        <img class='img' src='images/bored.jpg' alt=''>
+                        <div class="text">The Bored App</div>
+                        <p>Web apllication that makes use of the 'BORED' API by providing tasks that help tackle boredom 
+                            based on user's choice of activity theme, taken from a
+                             wide library of doable activities. Save favorite tasks for later, and more.</p>
+                           
+                    </div>
+                </div>
+                
+                <div class="card" onclick="location.href='https://github.com/Tu-Code/Desktop-Assistant/blob/master/README.md'">
+                    <div class="box">
+                        <img class='img' src='images/virtual_assist.jpg' alt=''>
+                        <div class="text">Virtual Assistant</div>
+                        <p>Virtual resource monitor that remotely monitors desktop resources
+                            and executes tasks, from returning state of requested desktop feautures
+                            down to telling a joke, through voice commands. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- skills -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My Creative Skills & Experiences.</div>
+                    <span>Member of the Babcock University Software/ Hardware Development Team. Java tutor and programming 
+                        mentor to Babcock University Department of Computer Science and Engineering (along with other
+                        interested individuals). Freelance Software Engineer since February, 2021. Competed in and won third place in first 
+                        hackathon during second year of college, and was selected as one of top 10 participants in international 'Hack4Pan' competition.
+                        Strong understanding of practical Computer Science concepts such as; 
+                        Data Structures & Algorithms, OOP, database management and Mathematics
+                    </span>
+                    
+                </div> 
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python (Flask)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line flask"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Node.js & Express</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Nest.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="line web"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>SQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="line sql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>C/C++</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line cpp"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                        <!-- <div class="text">Get In Touch</div>
+                        <p>Feel free to contact me!</p>-->
+                         
+                    <div class="icons">
+                        <!-- name -->
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">&nbspName</div>
+                                <div class="sub-title">&nbspSarah Solarin</div>
+                            </div>
+                        </div>
+                        <!-- name -->
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title"><a href="mailto:sarahsolarin56@gmail.com?subject='WORK EMAIL'">sarahsolarin56@gmail.com</a></div>
+                            </div>
+                        </div>
+                        <!-- adress -->
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">&nbspAddress</div>
+                                <div class="sub-title">&nbspOgun State, Nigeria</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    
+                    <!-- will work when hosted -->
+                    <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
+                    <form id="contact-form" action="https://formsubmit.co/solarinsarah3@email.com" method="POST" onsubmit="reset();">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input id="email" type="email" name="email" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="_subject" value="New submission!" placeholder="Subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea placeholder="Describe offer.."  name="message" id="" cols="30" rows="10" required></textarea>
+                        </div>
+
+                        <div class="button">
+                            <button type='submit'>Send Message</button>
+                        </div>
+                    
+                    </form>
+
+                </div>           
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <span class='far fa-copyright'>2023 All rights reserved.</span>
+    </footer>
+    <script src='script.js'></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->       
+    <!-- <script>
+        $(document).ready(function(){
+        $("#contact").submit(function(event){
+            event.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "https://formsubmit.co/solarinsarah3@gmail.com",
+                data: $("#contact").serialize(),
+                success: function() {
+                    alert("Your message has been sent!");
+                }
+            });
+        });
+});
+
+
+    </script> -->
+  </body>
 </html>
